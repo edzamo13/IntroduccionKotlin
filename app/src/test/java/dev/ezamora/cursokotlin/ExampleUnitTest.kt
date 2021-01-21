@@ -1,4 +1,4 @@
-package dev.rmedina.cursokotlinprincipiantes
+package dev.ezamora.cursokotlin
 
 import org.junit.Test
 

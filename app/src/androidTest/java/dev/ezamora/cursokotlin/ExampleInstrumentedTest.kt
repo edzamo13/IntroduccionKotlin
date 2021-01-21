@@ -1,4 +1,4 @@
-package dev.rmedina.cursokotlinprincipiantes
+package dev.ezamora.cursokotlin
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

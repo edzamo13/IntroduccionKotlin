@@ -1,17 +1,22 @@
-package dev.rmedina.cursokotlinprincipiantes
+package dev.ezamora.cursokotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 
-val TAG = ":::TAG"
+
 
 class MainActivity : AppCompatActivity() {
-
+    val TAG = ":::TAG"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val beginClass = BeginClass()
+        beginClass.variableAndconstante();
+        beginClass.typeOfdata();
+        Log.d(TAG,"*******************************************")
 
 //        condicionalesIf()
 //        condicionalesWhen()
@@ -21,6 +26,9 @@ class MainActivity : AppCompatActivity() {
 //        bucleDoWhile()
 //        controlDeErrores()
         botDeSeguridad()
+
+
+
     }
 
     private fun condicionalesIf() {
