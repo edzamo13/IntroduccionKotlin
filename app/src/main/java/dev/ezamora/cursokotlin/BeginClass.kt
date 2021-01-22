@@ -1,5 +1,6 @@
 package dev.ezamora.cursokotlin
 
+import android.app.Person
 import android.util.Log
 
 
@@ -12,6 +13,7 @@ class BeginClass {
         val myFirstConstant = "Hellow Constante"
         // myFirstConstant="ddd";
         Log.d(TAG,myFirstVariable)
+
 
     }
 
@@ -53,5 +55,33 @@ class BeginClass {
         return x+y;
     }
 
+
+    
+    public fun clases(){
+        val personData = PersonData(name = "Elvin",age = 38)
+        val edwin= Persona(personData)
+       // val pepe= Persona("José",38)
+       val  returnAge= edwin.returnAge(1982)
+        edwin.presentacion();
+    }
+    
+
+    class  Persona(private val data:PersonData): PersonaInterface{
+        fun presentacion () {
+            Log.d("TAG","la informacion de ${data.name} y su edad es: ${data.age}")
+        }
+
+        override fun returnAge(brithYear: Int): Int =2020
+    }
+
+data class PersonData(
+    val name: String?,
+    val age: Int
+        )
+
+
+    interface PersonaInterface{
+        fun returnAge(brithYear: Int):Int
+    }
 
 }
