@@ -1,4 +1,4 @@
-package dev.ezamora.cursokotlin
+package dev.ezamora.cursokotlin.openwebinar.course02
 
 import android.util.Log
 
@@ -32,7 +32,7 @@ class RetoFirts {
 
 
     interface ProgramerInterface{
-        fun getProgramerData():ProgramerData
+        fun getProgramerData(): ProgramerData
     }
 
     data class ProgramerData(

@@ -1,6 +1,5 @@
-package dev.ezamora.cursokotlin
+package dev.ezamora.cursokotlin.openwebinar.course02
 
-import android.app.Person
 import android.util.Log
 
 
@@ -66,7 +65,7 @@ class BeginClass {
     }
     
 
-    class  Persona(private val data:PersonData): PersonaInterface{
+    class  Persona(private val data: PersonData): PersonaInterface {
         fun presentacion () {
             Log.d("TAG","la informacion de ${data.name} y su edad es: ${data.age}")
         }

@@ -1,4 +1,4 @@
-package dev.ezamora.cursokotlin
+package dev.ezamora.cursokotlin.openwebinar.course02
 
 import android.util.Log
 
