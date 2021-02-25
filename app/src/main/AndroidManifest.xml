@@ -13,10 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoKotlin">
+       <!--
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="true" />
 
-        <!--
-<uses-library android:name="com.google.android.wearable" android:required="true" />
--->
+       -->
 
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
@@ -26,9 +28,10 @@
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
 
+        <activity android:name=".openwebinar.course01.example.fuctionextencion.FuctionExtencionActivity" />
         <activity android:name=".google.calculator.CalculatorActivity" />
         <activity android:name=".google.dice.DiceActivity" />
-        <activity android:name=".openwebinar.course01.exampleList.ListOpenWebinarActivity" />
+        <activity android:name=".openwebinar.course01.example.list.ListOpenWebinarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
