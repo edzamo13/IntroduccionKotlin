@@ -1,4 +1,4 @@
-package dev.ezamora.cursokotlin.openwebinar.course01.exampleList
+package dev.ezamora.cursokotlin.openwebinar.course01.example.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

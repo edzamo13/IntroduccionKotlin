@@ -104,13 +104,13 @@ class MainActivity_Bakup : AppCompatActivity() {
     }
 
     private fun listados() {
-        val myList = listOf("Rodrigo", "Raquel", "David", "Lorena", "Allison")
+       // val myList = listOf("Rodrigo", "Raquel", "David", "Lorena", "Allison")
         val myArrayList = arrayListOf("Rodrigo", "Raquel", "David", "Lorena", "Allison")
 
-        val listItem = myList[2]
+      //  val listItem = myList[2]
 
         myArrayList[2] = "Sandra"
-        val arrayListItem = myArrayList[2]
+       // val arrayListItem = myArrayList[2]
 
         myArrayList.removeAt(3)
 
@@ -118,7 +118,7 @@ class MainActivity_Bakup : AppCompatActivity() {
     }
 
     private fun bucleFor() {
-        val myArrayList = arrayListOf("Rodrigo", "Raquel", "David", "Lorena", "Allison")
+       // val myArrayList = arrayListOf("Rodrigo", "Raquel", "David", "Lorena", "Allison")
 
 //        for (persona in myArrayList) {
 //            Log.d(TAG, persona)

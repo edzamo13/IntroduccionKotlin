@@ -1,4 +1,4 @@
-package dev.ezamora.cursokotlin.openwebinar.course01.exampleList
+package dev.ezamora.cursokotlin.openwebinar.course01.example.list
 
 import android.view.LayoutInflater
 import android.view.View

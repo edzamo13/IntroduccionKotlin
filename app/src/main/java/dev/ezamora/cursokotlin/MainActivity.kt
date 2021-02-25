@@ -7,7 +7,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import dev.ezamora.cursokotlin.google.calculator.CalculatorActivity
 import dev.ezamora.cursokotlin.google.dice.DiceActivity
-import dev.ezamora.cursokotlin.openwebinar.course01.exampleList.ListOpenWebinarActivity
+import dev.ezamora.cursokotlin.openwebinar.course01.example.list.ListOpenWebinarActivity
 import dev.ezamora.cursokotlin.openwebinar.course01.basic.BasicConcept
 import dev.ezamora.cursokotlin.openwebinar.course01.basic.Colecciones
 import dev.ezamora.cursokotlin.openwebinar.course01.basic.Extenciones
@@ -32,10 +32,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnListOpenWebinar: Button = findViewById(R.id.btnListOpenWebinar)
         val btnDice: Button = findViewById(R.id.btnDice)
         val btnCalculator: Button = findViewById(R.id.btnCalculator)
+        val btnFntExtension : Button= findViewById(R.id.btnFntExtension)
 
         btnListOpenWebinar.setOnClickListener(this)
         btnDice.setOnClickListener(this)
         btnCalculator.setOnClickListener(this)
+        btnFntExtension.setOnClickListener(this)
 
     }
 
@@ -61,6 +63,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             if (v.id == btnCalculator.id) {
+                val intent = Intent(this, CalculatorActivity::class.java).apply {}
+                startActivity(intent)
+            }
+            if (v.id == btnFntExtension.id) {
                 val intent = Intent(this, CalculatorActivity::class.java).apply {}
                 startActivity(intent)
             }
